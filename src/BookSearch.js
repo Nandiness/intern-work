@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
-
+import { Link } from "react-router-dom";
 const BookSearchPage = () => {
   const [query, setQuery] = useState("");
   const [results, setResults] = useState([]);
@@ -65,7 +65,7 @@ const BookSearchPage = () => {
         )
       )
     ),
-    React.createElement("a", { href: "/bookshelf" }, "Go to My Bookshelf")
+    <Link to="/bookshelf">Go to Bookshelf</Link>
   );
 };
 

@@ -65,7 +65,7 @@ const BookSearchPage = () => {
         )
       )
     ),
-    <Link to="/bookshelf">Go to Bookshelf</Link>
+    <button className="direct"><Link to="/bookshelf">Go to Bookshelf</Link></button>
   );
 };
 

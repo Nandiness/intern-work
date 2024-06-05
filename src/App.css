@@ -65,7 +65,8 @@ td {
     th,
     td,
     tr {
-        display: block;
+        display: grid;
+        justify-content: center;
     }
     th {
         display: none;
@@ -73,7 +74,6 @@ td {
     }
     tr {
         margin-bottom: 10px;
-        border-bottom: 2px solid #ddd;
     }
     td {
         display: flex;
@@ -115,4 +115,15 @@ button:hover {
     color: white;
     border: 1px solid indigo;
     cursor: pointer;
+}
+
+.direct {
+    background-color: indigo;
+    color: white;
+    width: 300px;
+}
+
+.direct a {
+    text-decoration: none;
+    color: white;
 }

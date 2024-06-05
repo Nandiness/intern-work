@@ -5,25 +5,15 @@ import BookshelfPage from "./Bookshelf";
 import "./App.css";
 
 const App = () => {
-  return React.createElement(
-    Router,
-    null,
-    React.createElement(
-      "div",
-      { className: "app" },
-      React.createElement(
-        Routes,
-        null,
-        React.createElement(Route, {
-          path: "/",
-          element: React.createElement(BookSearchPage),
-        }),
-        React.createElement(Route, {
-          path: "/bookshelf",
-          element: React.createElement(BookshelfPage),
-        })
-      )
-    )
+  return (
+    <Router basename="/intern-work">
+      <div className="app">
+        <Routes>
+          <Route path="/" element={<BookSearchPage />} />
+          <Route path="/bookshelf" element={<BookshelfPage />} />
+        </Routes>
+      </div>
+    </Router>
   );
 };
 

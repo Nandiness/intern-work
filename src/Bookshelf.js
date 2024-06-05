@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-
+import { Link } from "react-router-dom";
 const BookshelfPage = () => {
   const [bookshelf, setBookshelf] = useState([]);
 
@@ -37,16 +37,12 @@ const BookshelfPage = () => {
             )
           )
         ),
-    React.createElement("a", { href: "/" }, "Back to Search")
+    <Link to="/">Go to Bookshelf</Link>
   );
 };
 
 const BookRow = ({ book }) => {
   const [isExpanded, setIsExpanded] = useState(false);
-
-
-  
-  
 
   return React.createElement(
     "tr",

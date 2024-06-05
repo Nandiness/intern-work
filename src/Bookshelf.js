@@ -37,7 +37,9 @@ const BookshelfPage = () => {
             )
           )
         ),
-    <Link to="/">Go to Bookshelf</Link>
+    <button className="direct">
+      <Link to="/">Go to BookSearch</Link>
+    </button>
   );
 };
 
